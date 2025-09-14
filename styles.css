@@ -1,0 +1,120 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header, /*used to auto resize if page is zoomed etc*/
+main, 
+footer{
+    max-width: 800px;
+    width:100%;
+    margin: 0 auto;
+    padding: 2rem;
+
+
+}
+
+header{
+    display : flex;
+    align-items: center;
+    justify-content: space-between; /*space out evenly*/ /**/
+    gap: 1rem;
+}
+
+nav{
+    display: flex; /*in the same row and aligned for github and linkedin icons */
+    align-items: center; 
+    gap: 1rem;
+}
+
+nav i{
+    font-size: 1.3rem;
+}
+
+main,
+section{
+    display: flex;
+    flex-direction: column ;
+}
+
+main{
+    gap: 4rem;
+    ;
+}
+
+section{
+    gap: 1rem;
+}
+
+.intro-header p{
+    padding-top: 0.25rem; ;/*Space between title*/
+}
+
+.intro-description {
+    max-width: 500px;
+}
+
+.links-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding:1rem 0;
+}
+
+.link-arrow{ /*arrow color change*/
+    color: var(--color-link);
+    transform: rotate(-45deg);
+}
+
+.color-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cards-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-links{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    padding-top: 0,5rem;
+}
+
+.tech-list{  /*technolgies used in project */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap; /*wrap to next line if too long*/;
+    padding:0,25rem 0;
+}
+
+.tech-list div{ /*round edges*/
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small); 
+}
+
+.techlist p {
+    font-size: 0.8rem;
+}
+
+/*if page goes over 640px use these instead*/
+@media (min-width: 640px) {
+    .project-card{
+        flex-direction: row;
+        
+    }
+    .project-card .img-div{ /*image stops growing after 30% of the parent element*/
+        max-width: 30%;
+    }
+}
