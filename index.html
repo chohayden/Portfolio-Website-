@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!--opener-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayden Cho Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" /> <!-- importing stylesheets-->
+    <link rel="stylesheet" href="fanta.css" /> <!-- importing css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--importing font awesome icons-->
+</head>
+
+<body>
+    <header>
+        <a href="/">Hayden Cho</a> <!--a href m,akes text clickable-->
+        <nav>
+            <!--target opens linnk in new tab--> <a target="_blank" href="https://github.com/chohayden"><i
+                    class="fa-brands fa-github"></i> </a> <!--github icon-->
+            <a target="_blank" href="https://www.linkedin.com/in/hayden-cho/"><i class="fa-brands fa-linkedin"></i> </a>
+            <!--linkedin icon-->
+        </nav>
+    </header>
+    <main>
+        <section> <!--intro section-->
+            <div class="intro-header">
+                <h1>방가방가!!! I'm Hayden Cho </h1>
+                <p>Aspiring Software Engineer</p>
+            </div>
+            <h5 class="intro-description">
+                Currently studying Computer Science at California State University, Fresno. I love to cook, golf, go on
+                hikes, and just making stuff
+            </h5>
+            <div class="links-container">
+                <i class="fa-solid link-arrow fa-arrow-right"></i>
+                <a target="_blank" href="mailto:chohayden107@gmail.com">
+                    Email Me
+                </a>
+                <a target="_blank" href="https://github.com/chohayden">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/hayden-cho/">LinkedIn</a>
+            </div>
+            <div id="play-game">
+                <button onclick="playGame()">Play Game???</button>
+
+            </div>
+            <div style="display: none;" class="color-div"> <!--div color game-->
+                <h4>Pick a Color</h4>
+                <p style="display:none;">You found the secret! Congrats!!!</p>
+                <input type="color" id="color-picker" onchange="changeColor()" value="#0084ff" />
+                <button style="display:none;" onclick="resetColor()">Reset</button>
+            </div>
+        </section>
+
+
+        <section> <!--skills section-->
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+
+                    </tr>
+                </thead> <!--headers for columns-->
+                <tbody>
+                    <tr> <!--hortizontal-->
+                        <td>Programming</td> <!--VERTICAL  -->
+                        <td>C++, Python, HTML, CSS, Javascript<!--ReactJS --></td>
+                    </tr>
+                    <tr>
+                        <td>Relevant Coursework</td>
+                        <td>Algorithms and Data Structures, Operating Systems, Artificial Intelligence Programming,
+                            Structures of Programming Language, Computer Security, Applied Biometric Security
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Web</td>
+                        <td>FantaCSS <!--,Firebase, Docker, AWS</td>-->
+                    </tr>
+                    <tr>
+                        <td>Extra Skills</td>
+                        <td></td>
+                    </tr>
+                </tbody> <!--values-->
+            </table>
+        </section>
+
+        <section> <!--projects section-->
+            <h2>Projects</h2>
+            <div class="cards-grid">
+                <div class="project-card">
+                    <div>
+                        <h4>Website Portfolio</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                        </div>
+                        <p>Blah Blah Blah</p>
+                        <div class="projects-links">
+                            <a target="_blank" href="/">Link</a>
+                            <a target="_blank" href="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="image-div">
+                        <img class="big-img" src="/1_web_portfolio/public/for website.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <h4>Website Portfolio</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                        </div>
+                        <p>Blah Blah Blah</p>
+                        <div class="projects-links">
+                            <a target="_blank" href="/">Link</a>
+                            <a target="_blank" href="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="image-div">
+                        <img class="big-img" src="/1_web_portfolio/public/for website.png" alt="" />
+                    </div>
+                </div>
+
+
+                                <div class="project-card">
+                    <div>
+                        <h4>Website Portfolio</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                            <div class="card-button-secondary">
+                                <p>NextJS</p>
+                            </div>
+                        </div>
+                        <p>Blah Blah Blah</p>
+                        <div class="projects-links">
+                            <a target="_blank" href="/">Link</a>
+                            <a target="_blank" href="/">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="image-div">
+                        <img class="big-img" src="/1_web_portfolio/public/for website.png" alt="" />
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>By <a href="/" target="_blank">Hayden Cho </a> on <a
+                href="!!!!!!link for project">GitHub</a> </p>
+    </footer>
+    <script> //color picking game javascript
+         
+        //1. select all html elemnts to use
+        const body = document.querySelector('body')
+        const colorInput = document.getElementById('color-picker')
+        const colorDiv = document.querySelector('.color-div')
+        const hiddenText = document.querySelector('.color-div p')
+        const resetButton = document.querySelector('.color-div button')
+        const button = documentgetElementById('play-game')
+
+        //2. create function to start game
+        function playGame(){ //shows color picker to play
+            colorDiv.style.display = 'block'
+            button.style.display = 'none' //swaps the buttons to show and disappear 
+        }
+
+        function changeColor(){
+            //take users color input and change background
+            const selectedColor = colorInput.value //value holds the hex code of the color
+            body.style.backgroundColor = selectedColor
+            resetButton.style.display = 'block'
+            hiddenText.style.display = 'block'
+            colorInput.style.display = 'none'
+
+
+        }
+//3. assign the function to a button
+        function resetColor(){
+            body.style.background = 'white'
+            colorInput .style.display = 'block'
+            hiddenText.style.display = 'none'
+            resetButton.style.display = 'none'
+            colorDiv.style.display = 'none'
+            
+        }
+      
+        
+
+
+
+    </script>
+</body>
+
+</html> <!--closer-->
